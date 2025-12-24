@@ -49,6 +49,32 @@ finance-tracker/
 
 ## 🚀 Quick Start
 
+### 🐳 Docker Deployment (Recommended)
+
+The fastest way to get started with production-ready setup including load balancing and scaling:
+
+```bash
+# 1. Generate secure environment variables
+./prep.sh
+
+# 2. Start all services (Postgres, Backend x2, Frontend x2, Nginx)
+docker compose up -d --build
+
+# 3. Run database migrations
+docker compose exec backend npx prisma migrate deploy
+
+# 4. Access application
+# Open browser: http://localhost
+```
+
+**📖 For detailed Docker setup, scaling, and DevOps features, see [DOCKER.md](./DOCKER.md)**
+
+---
+
+### 💻 Local Development
+
+For local development without Docker:
+
 ### Prerequisites
 - Node.js 18+ 
 - PostgreSQL

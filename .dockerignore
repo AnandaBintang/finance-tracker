@@ -1,0 +1,17 @@
+.env
+.env.local
+.env*.local
+node_modules
+npm-debug.log
+.git
+.gitignore
+*.md
+.DS_Store
+.vscode
+.idea
+coverage
+logs
+*.log
+backend/.env
+frontend/.env
+frontend/.env.local
