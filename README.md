@@ -380,7 +380,3 @@ For issues and questions:
 - Review code comments
 
 ---
-
-**Built with ❤️ using Next.js and Express**
-
-Happy Coding! 🚀
